@@ -1,8 +1,8 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.5.4)  6 JAN 2023 13:27
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.5.4)  27 DEC 2022 15:41
  restricted system commands enabled.
  file:line:error style messages enabled.
-**sample.tex
-(./sample.tex
+**kougai.tex
+(./kougai.tex
 LaTeX2e <2021-11-15> patch level 1
 Lua module: luaotfload 2022-03-18 3.21 Lua based OpenType font support
 Lua module: lualibs 2021-05-20 2.74 ConTeXt Lua standard libraries.
@@ -393,16 +393,11 @@ Package: luatexja-compat 2020-08-08 Compatibility with pTeX
 ))
 \jsc@mpt=\dimen156
 \jsc@mmm=\dimen157
-\ltjs@@magnify@font@calc=\luafunction64
 \jsc@smallskipamount=\skip47
-(load cache: extra_lmroman8-regular.luc)
-LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 7.70596pt on input line 414.
-LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 414.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
 (Font)              scaled to size 9.24713pt on input line 414.
 \fullwidth=\dimen158
+(load cache: extra_lmroman8-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
 (Font)              scaled to size 7.3977pt on input line 555.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
@@ -439,7 +434,16 @@ ings
 \c@dblbotnumber=\count272
 )
 (/usr/local/texlive/2022/texmf-dist/tex/luatex/luatexja/patches/lltjp-stfloats.
-sty)) (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.sty
+sty)) (./kougai.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen162
+\WF@size=\dimen163
+\c@WF@wrappedlines=\count273
+\WF@box=\box69
+\WF@everypar=\toks26
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/graphics.sty
@@ -456,17 +460,10 @@ Package graphics Info: Driver file: luatex.def on input line 107.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-def/luatex.def
 File: luatex.def 2021/06/01 v1.2c Graphics/color driver for luatex
 ))
-\Gin@req@height=\dimen162
-\Gin@req@width=\dimen163
+\Gin@req@height=\dimen164
+\Gin@req@width=\dimen165
 )
-(./kougai.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen164
-\WF@size=\dimen165
-\c@WF@wrappedlines=\count273
-\WF@box=\box69
-\WF@everypar=\toks26
-Package: wrapfig 2003/01/31  v 3.6
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2021/12/07 v1.3c Standard LaTeX Color (DPC)
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -526,11 +523,11 @@ Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <10> not available
 (Font)              Font shape `JT3/gt/m/n' tried instead on input line 3901.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 7.70596pt on input line 3901.
+(Font)              scaled to size 9.24713pt on input line 3901.
 LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <10> not available
 (Font)              Font shape `JY3/gt/m/n' tried instead on input line 3901.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 7.70596pt on input line 3901.
+(Font)              scaled to size 9.24713pt on input line 3901.
 (load cache: extra_haranoajigothic-medium.luc)))
 (/usr/local/texlive/2022/texmf-dist/tex/luatex/luatexja/patches/lltjp-fontspec.
 sty)
@@ -1062,74 +1059,70 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@count@id=\count324
 \enitdp@description=\count325
 )
-LaTeX Font Info:    Trying loading font information for T1+fnc on input line 9.
-
+LaTeX Font Info:    Trying loading font information for T1+fnc on input line 12
+.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fouriernc/t1fnc.fd
 File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 9.
- (./sample.aux
+(Font)              scaled to size 9.29993pt on input line 12.
+ (./kougai.aux)
+\openout1 = kougai.aux
 
-LaTeX Warning: Label `fig:layout_ex' multiply defined.
-
-)
-\openout1 = sample.aux
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    Trying loading font information for TS1+cmr on input line 9
-.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    Trying loading font information for TS1+cmr on input line 1
+2.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 12.
 LaTeX Font Info:    Trying loading font information for FML+fncmi on input line
- 9.
+ 12.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 12.
 LaTeX Font Info:    Trying loading font information for FMS+fncm on input line 
-9.
+12.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fouriernc/fmsfncm.fd
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 12.
 LaTeX Font Info:    Trying loading font information for FMX+futm on input line 
-9.
+12.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1169,25 +1162,25 @@ e
 * \textheight=773.91498pt
 * \oddsidemargin=-29.59087pt
 * \evensidemargin=-29.59087pt
-* \topmargin=-80.96185pt
-* \headheight=23.99994pt
-* \headsep=13.14467pt
-* \topskip=15.31325pt
+* \topmargin=-79.51408pt
+* \headheight=20.0pt
+* \headsep=15.69684pt
+* \topskip=12.76108pt
 * \footskip=28.45792pt
-* \marginparwidth=11.09653pt
-* \marginparsep=22.19305pt
-* \columnsep=22.19305pt
-* \skip\footins=19.19995pt plus 5.99998pt minus 2.4pt
+* \marginparwidth=27.7414pt
+* \marginparsep=18.49426pt
+* \columnsep=18.49426pt
+* \skip\footins=16.0pt plus 5.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
-* \@twocolumnfalse
+* \@twocolumntrue
 * \@twosidefalse
 * \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 9.
+Package hyperref Info: Link coloring OFF on input line 12.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -1200,275 +1193,129 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count332
 )
-LaTeX Info: Redefining \ref on input line 9.
-LaTeX Info: Redefining \pageref on input line 9.
-LaTeX Info: Redefining \nameref on input line 9.
- (./sample.out) (./sample.out)
+LaTeX Info: Redefining \ref on input line 12.
+LaTeX Info: Redefining \pageref on input line 12.
+LaTeX Info: Redefining \nameref on input line 12.
+ (./kougai.out) (./kougai.out)
 \@outlinefile=\write4
 
-\openout4 = sample.out
+\openout4 = kougai.out
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 16.07025pt on input line 16.
+(Font)              scaled to size 16.07027pt on input line 15.
 LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 15.97902pt on input line 16.
+(Font)              scaled to size 15.97903pt on input line 15.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 15.97902pt on input line 16.
+(Font)              scaled to size 15.97903pt on input line 15.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 23.13821pt on input line 20.
+(Font)              scaled to size 11.15991pt on input line 15.
 LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 23.00687pt on input line 20.
+(Font)              scaled to size 11.09656pt on input line 15.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 23.00687pt on input line 20.
- [1
-
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 9.29993pt on input line 56.
-LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/b/n' will be
-
-(Font)              scaled to size 9.24713pt on input line 56.
-LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/b/n' will be
-
-(Font)              scaled to size 9.24713pt on input line 56.
+(Font)              scaled to size 11.09656pt on input line 15.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 56.
-LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 11.09656pt on input line 56.
-LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 11.09656pt on input line 56.
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 56.
-LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/b/n' will be
-
-(Font)              scaled to size 11.09656pt on input line 56.
-LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/b/n' will be
-
-(Font)              scaled to size 11.09656pt on input line 56.
- (./sample.toc
-LaTeX Font Info:    Calculating math sizes for size <11.99997> on input line 3.
-
+(Font)              scaled to size 8.36993pt on input line 15.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.06787pt on input line 3.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 5.57999pt on input line 3.
+(Font)              scaled to size 6.50995pt on input line 15.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 3.
+(Font)              scaled to size 11.03998pt on input line 15.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99191pt on input line 3.
+(Font)              scaled to size 8.27998pt on input line 15.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.52002pt on input line 3.
+(Font)              scaled to size 6.43999pt on input line 15.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 7.02774pt on input line 3.
+(Font)              scaled to size 8.32242pt on input line 15.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 5.54831pt on input line 3.
+(Font)              scaled to size 6.47299pt on input line 15.
 LaTeX Font Info:    Trying loading font information for FML+fncm on input line 
-3.
+15.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
 File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 3.
+(Font)              scaled to size 11.03998pt on input line 15.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99191pt on input line 3.
+(Font)              scaled to size 8.27998pt on input line 15.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.52002pt on input line 3.
-)
-\tf@toc=\write5
+(Font)              scaled to size 6.43999pt on input line 15.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 11.15991pt on input line 16.
+LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/b/n' will be
 
-\openout5 = sample.toc
+(Font)              scaled to size 11.09656pt on input line 16.
+LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/b/n' will be
 
-warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
-[1]
-warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
-[1
-
-]
-<figures/itiyo.pdf, id=118, 963.6pt x 542.025pt>
-File: figures/itiyo.pdf Graphic file (type pdf)
-<use figures/itiyo.pdf>
-Package luatex.def Info: figures/itiyo.pdf  used on input line 101.
-(luatex.def)             Requested size: 284.52756pt x 160.04485pt.
+(Font)              scaled to size 11.09656pt on input line 16.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 102.
-LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 8.32242pt on input line 102.
+(Font)              scaled to size 7.06795pt on input line 22.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 5.57996pt on input line 22.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 22.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 22.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 22.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 8.32242pt on input line 102.
- [2
+(Font)              scaled to size 7.02782pt on input line 22.
+LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-<./figures/itiyo.pdf>]
-<figures/heihousaisunhou.pdf, id=137, 963.6pt x 542.025pt>
-File: figures/heihousaisunhou.pdf Graphic file (type pdf)
-<use figures/heihousaisunhou.pdf>
-Package luatex.def Info: figures/heihousaisunhou.pdf  used on input line 115.
-(luatex.def)             Requested size: 284.52756pt x 160.04485pt.
- [3
-
-<./figures/heihousaisunhou.pdf>]
-<figures/seikir.pdf, id=157, 963.6pt x 542.025pt>
-File: figures/seikir.pdf Graphic file (type pdf)
-<use figures/seikir.pdf>
-Package luatex.def Info: figures/seikir.pdf  used on input line 146.
-(luatex.def)             Requested size: 284.52756pt x 160.04485pt.
- [4
-
-<./figures/seikir.pdf>]
-<figures/sisu.pdf, id=177, 963.6pt x 542.025pt>
-File: figures/sisu.pdf Graphic file (type pdf)
-<use figures/sisu.pdf>
-Package luatex.def Info: figures/sisu.pdf  used on input line 184.
-(luatex.def)             Requested size: 284.52756pt x 160.04485pt.
- [5
-
-<./figures/sisu.pdf>] [6
-
-]
-<figures/layout2.pdf, id=206, 963.6pt x 542.025pt>
+(Font)              scaled to size 5.54828pt on input line 22.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 22.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 22.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 22.
+<figures/layout2.pdf, id=4, 963.6pt x 542.025pt>
 File: figures/layout2.pdf Graphic file (type pdf)
 <use figures/layout2.pdf>
-Package luatex.def Info: figures/layout2.pdf  used on input line 247.
-(luatex.def)             Requested size: 404.66513pt x 227.62204pt.
- [7
+Package luatex.def Info: figures/layout2.pdf  used on input line 46.
+(luatex.def)             Requested size: 213.38947pt x 99.57831pt.
+LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-<./figures/layout2.pdf>] [8
+(Font)              scaled to size 8.32242pt on input line 48.
 
-]
-<figures/hyperlink.pdf, id=364, 963.6pt x 542.025pt>
-File: figures/hyperlink.pdf Graphic file (type pdf)
-<use figures/hyperlink.pdf>
-Package luatex.def Info: figures/hyperlink.pdf  used on input line 279.
-(luatex.def)             Requested size: 284.52756pt x 160.04485pt.
-<figures/html_ele.pdf, id=366, 963.6pt x 542.025pt>
-File: figures/html_ele.pdf Graphic file (type pdf)
-<use figures/html_ele.pdf>
-Package luatex.def Info: figures/html_ele.pdf  used on input line 290.
-(luatex.def)             Requested size: 354.07097pt x 199.16928pt.
- [9
 
-<./figures/hyperlink.pdf><./figures/html_ele.pdf>] [10
+LaTeX Warning: File `figures/layout1014.pdf' not found on input line 57.
 
-]
-<figures/css_ele.pdf, id=411, 963.6pt x 542.025pt>
-File: figures/css_ele.pdf Graphic file (type pdf)
-<use figures/css_ele.pdf>
-Package luatex.def Info: figures/css_ele.pdf  used on input line 321.
-(luatex.def)             Requested size: 404.66513pt x 227.62204pt.
- [11
 
-<./figures/css_ele.pdf>]
-[12
+./kougai.tex:57: Package luatex.def Error: File `figures/layout1014.pdf' not fo
+und: using draft setting.
 
-] [13
+See the luatex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 ...th=85mm,height=50mm]{figures/layout1014.pdf}
+                                                  
+? 
+./kougai.tex:57: Emergency stop.
+ ...                                              
+                                                  
+l.57 ...th=85mm,height=50mm]{figures/layout1014.pdf}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-]
-<figures/simulator_layout.pdf, id=443, 963.6pt x 542.025pt>
-File: figures/simulator_layout.pdf Graphic file (type pdf)
-<use figures/simulator_layout.pdf>
-Package luatex.def Info: figures/simulator_layout.pdf  used on input line 360.
-(luatex.def)             Requested size: 404.66513pt x 227.62204pt.
- [14
 
-<./figures/simulator_layout.pdf>] [15
-
-]
-warning  (file figures/layout_ex.pdf) (pdf inclusion): PDF inclusion: found PDF 
-version '1.7', but at most version '1.5' allowed
-<figures/layout_ex.pdf, id=477, 1445.47429pt x 819.1021pt>
-File: figures/layout_ex.pdf Graphic file (type pdf)
-<use figures/layout_ex.pdf>
-Package luatex.def Info: figures/layout_ex.pdf  used on input line 412.
-(luatex.def)             Requested size: 401.6863pt x 227.62204pt.
-[16
-
-<./figures/layout_ex.pdf>]
-warning  (file figures/lay2.pdf) (pdf inclusion): PDF inclusion: found PDF versi
-on '1.7', but at most version '1.5' allowed
-<figures/lay2.pdf, id=488, 1445.47429pt x 820.1059pt>
-File: figures/lay2.pdf Graphic file (type pdf)
-<use figures/lay2.pdf>
-Package luatex.def Info: figures/lay2.pdf  used on input line 437.
-(luatex.def)             Requested size: 401.179pt x 227.62204pt.
-[17
-
-<./figures/lay2.pdf>]
-warning  (file figures/lay_para.pdf) (pdf inclusion): PDF inclusion: found PDF v
-ersion '1.7', but at most version '1.5' allowed
-<figures/lay_para.pdf, id=501, 1382.22592pt x 816.04817pt>
-File: figures/lay_para.pdf Graphic file (type pdf)
-<use figures/lay_para.pdf>
-Package luatex.def Info: figures/lay_para.pdf  used on input line 452.
-(luatex.def)             Requested size: 385.54425pt x 227.62204pt.
-<figures/figure_sample.pdf, id=502, 963.6pt x 542.025pt>
-File: figures/figure_sample.pdf Graphic file (type pdf)
-<use figures/figure_sample.pdf>
-Package luatex.def Info: figures/figure_sample.pdf  used on input line 460.
-(luatex.def)             Requested size: 404.66513pt x 227.62204pt.
-[18
-
-<./figures/lay_para.pdf><./figures/figure_sample.pdf>] [19
-
-] [20
-
-]
-LaTeX Font Info:    Trying loading font information for T1+lmtt on input line 4
-87.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 9.24713pt on input line 487.
-LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 9.24713pt on input line 487.
- [21
-
-] (./sample.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package rerunfilecheck Info: File `sample.out' has not changed.
-(rerunfilecheck)             Checksum: 7258E7CCECBC6E01F840721CF33E7328;1766.
-)
 
 Here is how much of LuaTeX's memory you used:
- 18569 strings out of 477785
- 195698,794899 words of node,token memory allocated
- 32410 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 2 glue, 393 kern, 1 glyph, 11070 attribute, 1256 g
-lue_spec, 584 attribute_list, 1 write, 149 user_defined, 3 pdf_action nodes
-   avail lists: 1:46,2:54154,3:256,4:145,5:34,6:55,7:3599,8:74,9:1764,10:40,11:1
-0
- 38160 multiletter control sequences out of 65536+600000
- 111 fonts using 119037407 bytes
- 115i,11n,118p,1765b,1031s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/tex
-live/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-
-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Bold.otf></usr/local/texliv
-e/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></
-usr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></u
-sr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></u
-sr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr
-/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texl
-ive/2022/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2022
-/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2022/texmf-d
-ist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on sample.pdf (23 pages, 1444094 bytes).
-
-PDF statistics: 585 PDF objects out of 1000 (max. 8388607)
- 463 compressed objects within 5 object streams
- 83 named destinations out of 1000 (max. 131072)
- 145 words of extra memory for PDF output out of 10000 (max. 100000000)
-
+ 18360 strings out of 477785
+ 305788,794899 words of node,token memory allocated 238165 words of node memory still in use:
+   252 hlist, 8 vlist, 1160 rule, 15 local_par, 3 dir, 33 math, 1561 glue, 346 k
+ern, 208 penalty, 1311 glyph, 95375 attribute, 272 glue_spec, 4800 attribute_lis
+t, 3 temp, 7 if_stack, 10 write, 158 user_defined, 7 pdf_dest, 17 pdf_colorstack
+, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
+   avail lists: 1:49,2:21,3:90,4:28,5:3,6:2,7:1184,8:15,9:534,10:23
+ 38038 multiletter control sequences out of 65536+600000
+ 142 fonts using 109612855 bytes
+ 115i,11n,118p,1763b,1031s stack positions out of 10000i,1000n,20000p,200000b,200000s
+./kougai.tex:57:  ==> Fatal error occurred, no output PDF file produced!
