@@ -18,5 +18,6 @@
 \contentsline {subsection}{\numberline {5.2}開発した教材の実行例}{16}{subsection.5.2}%
 \contentsline {subsubsection}{\numberline {5.2.1}各パラメータについて}{17}{subsubsection.5.2.1}%
 \contentsline {subsubsection}{\numberline {5.2.2}実行方法について}{18}{subsubsection.5.2.2}%
-\contentsline {section}{\numberline {6}おわりに}{19}{section.6}%
-\contentsline {section}{\numberline {7}謝辞}{20}{section.7}%
+\contentsline {subsection}{\numberline {5.3}開発したプログラムについて}{19}{subsection.5.3}%
+\contentsline {section}{\numberline {6}おわりに}{21}{section.6}%
+\contentsline {section}{\numberline {7}謝辞}{22}{section.7}%
