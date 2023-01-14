@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.5.4)  14 JAN 2023 13:47
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.5.4)  14 JAN 2023 14:17
  restricted system commands enabled.
  file:line:error style messages enabled.
 **sample.tex
@@ -1492,21 +1492,26 @@ Package luatex.def Info: figures/lay_anime.pdf  used on input line 478.
 ] [22
 
 ]
-LaTeX Font Info:    Trying loading font information for T1+lmtt on input line 5
-69.
+[23
 
-(/usr/local/texlive/2022/texmf-dist/tex/latex/lm/t1lmtt.fd
+] [24
+
+]
+LaTeX Font Info:    Trying loading font information for T1+lmtt on input line 5
+83.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 9.24713pt on input line 569.
+(Font)              scaled to size 9.24713pt on input line 583.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 9.24713pt on input line 569.
- [23
+(Font)              scaled to size 9.24713pt on input line 583.
+ [25
 
-] (./sample.aux)
+]
+(./sample.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1515,12 +1520,12 @@ Package rerunfilecheck Info: File `sample.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 18599 strings out of 477785
+ 18601 strings out of 477785
  195698,794899 words of node,token memory allocated
- 34556 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 2 glue, 401 kern, 1 glyph, 11734 attribute, 1388 g
-lue_spec, 619 attribute_list, 1 write, 161 user_defined, 3 pdf_action nodes
-   avail lists: 1:45,2:56665,3:294,4:229,5:34,6:56,7:3801,8:74,9:1864,10:40,11:1
+ 34861 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 2 glue, 401 kern, 1 glyph, 11802 attribute, 1417 g
+lue_spec, 623 attribute_list, 1 write, 165 user_defined, 3 pdf_action nodes
+   avail lists: 1:45,2:56593,3:304,4:235,5:34,6:56,7:3801,8:74,9:1864,10:40,11:1
 4
  38170 multiletter control sequences out of 65536+600000
  111 fonts using 119037407 bytes
@@ -1536,10 +1541,10 @@ sr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr
 ive/2022/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2022
 /texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2022/texmf-d
 ist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on sample.pdf (25 pages, 1333911 bytes).
+Output written on sample.pdf (27 pages, 1336014 bytes).
 
-PDF statistics: 620 PDF objects out of 1000 (max. 8388607)
- 496 compressed objects within 5 object streams
- 103 named destinations out of 1000 (max. 131072)
+PDF statistics: 629 PDF objects out of 1000 (max. 8388607)
+ 502 compressed objects within 6 object streams
+ 105 named destinations out of 1000 (max. 131072)
  153 words of extra memory for PDF output out of 10000 (max. 100000000)
 
