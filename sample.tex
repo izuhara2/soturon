@@ -92,6 +92,7 @@
 
 \subsection{一様乱数}
 乱数のうち，出た数が図\ref{fig:一様乱数のグラフ}のような一様分布に従う乱数を一様乱数という．
+$x$軸は取り得る値を表し，$y$軸は確率の頻度・密度を表している．
 図\ref{fig:一様乱数のグラフ}を見ての通り，どの値でも一定の値をとる．
 つまり，ある区間において数値が同じ確率で出現する確率分布に従う乱数のことである．
 一様乱数として身近なもので，サイコロがある．サイコロは1から6までの数値がすべて$\frac{1}{6}$の確率で出現する．
@@ -123,21 +124,26 @@
 そこで2つ目の方法として，レーマー（H.Lehmer）により提案された乗算合同法がよくつかわれている．
 乗算合同法は除算の剰余を数列化していくものである．
 次式を使い，乱数を求める方法である．
-\begin{enumerate}[label=(\Alph*)]
-	\item　 $x_{n+1} = ax_n（mod M）$
-	\item　$n >= 1$
-\end{enumerate} 
+\begin{equation}
+   x_{n+1} = ax_n（mod M ）\tag{A}
+   \label{eq:A式}
+\end{equation}
+\begin{equation}
+  n >= 1  \tag{B}
+  \label{eq:B式}
+\end{equation}
 
 また区間（0,1）の範囲で一様乱数を必要とする場合には，上記の方法で得られた乱数列を$M$で除算すればよい．
 乗算合同法では，乱数を生成する方法として剰余を用いているので，乱数の最大値は$M$より大きくならない．
 必ず$M$より小さな周期を持つことになる．
 そのため$M$としては大きな値を与える必要がある．
-しかし式（A）から分かるように乱数生成の計算に必要な整数の最大値（$aM$）になるので，この値がコンピュータの扱える最大整数値を超えないようにする必要がある．
+しかし式\ref{eq:A式}から分かるように乱数生成の計算に必要な整数の最大値（$aM$）になるので，この値がコンピュータの扱える最大整数値を超えないようにする必要がある．
 
 \clearpage
 
 \subsection{正規乱数}
 図\ref{fig:正規乱数}は正規分布の密度関数を表している．
+$x$軸は取り得る値を表し，$y$軸は確率の頻度・密度を表している．
 事象として平均値を取る確率が一番大きく、平均値から離れるにつれその値を取る確率は小さくなることがグラフから読み取れる．
 乱数のうち，生成の割合が図\ref{fig:正規乱数}のような正規分布に依存しているものを正規乱数という．
 \vspace{8mm}
@@ -160,21 +166,24 @@
 
 取り出した乱数の総和（$\nu=\gamma_1+\gamma_2+・・・+\gamma_{12}$）の集合は全て12倍されて，平均値は6，標準偏差が1になるので，これらの集合から6引いた値
 
-\begin{enumerate}[label=(\alph*)]
-	\item $\nu =  \nu=\gamma_1+\gamma_2+・・・+\gamma_{12}-6$
-	
+\begin{equation}
+	\nu =  \nu=\gamma_1+\gamma_2+・・・+\gamma_{12}-6 \tag{a}
+	\label{eq:a式}
+\end{equation}
 は平均値が0で，標準偏差が1の正規乱数となる．
 	
 よって平均値が$\mu$で，標準偏差が$\sigma$の正規乱数は
-	\item $\mu+\sigma\nu$
-	
+\begin{equation}
+	\mu+\sigma\nu \tag{b}
+	\label{eq:b式}
+\end{equation}	
 という関数で表すことができる．
-\end{enumerate} 
 
 \clearpage
 
 \subsection{指数乱数}
 図\ref{fig:指数乱数のグラフ}は指数分布のグラフである．
+$x$軸は取り得る値を表し，$y$軸は確率の頻度・密度を表している．
 指数乱数はランダムなイベントの発生間隔を表す分布である．
 日常で使用されている例として「地震が起きる間隔」や「電球の寿命」などを表す分布として使われいる\cite{Exponential}．
 乱数のうち，生成の割合が図\ref{fig:指数乱数のグラフ}のような指数分布に依存する．
@@ -190,21 +199,26 @@
 性質として「小さな値は多く生じ，大きな値はあまり起こらない」偶発的な値を発生させるということがある．
 指数乱数の生成方法は，ある分布の乱数の確率分布を積分すると，一様乱数になるという性質を利用して生成する．
 このような生成方法を逆変換法という．例えば$\nu$を指数乱数とし，$\gamma$を一様乱数とすると次のような関係式になる．
-\begin{enumerate}[label=(\roman*)]
-\item $\int_0^\gamma{\alpha}exp(-\alpha\nu)dx = \gamma$
-
+\begin{equation}
+	\int_0^\gamma{\alpha}exp(-\alpha\nu)dx = \gamma \tag{i}
+	\label{eq:i式}
+\end{equation}
 \noindent
 この式を積分して変形すると
-
-\item $\nu = -(\frac{1}{\alpha})ln(1-\gamma)$
-
+\begin{equation}
+	\nu = -(\frac{1}{\alpha})ln(1-\gamma) \tag{ii}
+	\label{eq:ii式}
+\end{equation}
 \noindent
-が得られる．ここで$\gamma$は区間（0,1）の一様乱数なので，1-$\gamma$も一様乱数になる．よって指数乱数の生成方法は
+が得られる．ここで$\gamma$は区間（0,1）の一様乱数なので，1-$\gamma$も一様乱数になる．
 
-\item $\nu = -(\frac{1}{\alpha})ln\gamma$
-\end{enumerate} 
+よって指数乱数の生成方法は
+\begin{equation}
+	\nu = -(\frac{1}{\alpha})ln\gamma \tag{iii}
+	\label{eq:iii式}
+\end{equation}
 \noindent
-という式に基づく．この指数分布による乱数は，ある系に偶発的に顧客が入ってくる時間間隔のモデルとしてよく用いられ，（e）式で表された客の流れを最も簡単な流れ，またはポアソン分布と呼んでいる．この場合，パラメータ$\alpha$は客の流れ密度に相当する．
+という式に基づく．この指数分布による乱数は，ある系に偶発的に顧客が入ってくる時間間隔のモデルとしてよく用いられ，式\ref{eq:iii式}で表された客の流れを最も簡単な流れ，またはポアソン分布と呼んでいる．この場合，パラメータ$\alpha$は客の流れ密度に相当する．
 
 \clearpage
 
@@ -260,7 +274,10 @@ $N$番目の客はどこかの窓口が空いていればその場所でサー�
 この時の平均待ち時間は顧客1人1人の待ち時間を足していき顧客の数で割って求める．
 また安定状態にある時の条件は，窓口での処理時間$x$，流れ密度$\alpha$，窓口の数$y$の関係が
 
-（A）$x\alpha < y$
+\begin{equation}
+	x\alpha < y \tag{I}
+	\label{eq:I式}
+\end{equation}
 
 \noindent
 が成り立つ時に安定状態となる．
@@ -547,13 +564,14 @@ PAUSEボタンは押すことでアニメーションの途中で止めること
 \clearpage
 
 \begin{thebibliography}{99}
-\bibitem{sotuken16}平成16年度　卒業論文　モンテカルロ法による待ち行列問題のマルチメディア教材 　（薄井英彦・梅山卓也）
-\bibitem{soumu} 総務省統計局　最適な設備投資を把握”, \url{https://www.stat.go.jp/naruhodo/15_episode/toukeigaku/setubitoshi.html}, 2022/12/5参照
-\bibitem{html} HTMLクイックリファレンス”, \url{http://www.htmq.com/}, 2022/12/5参照
-\bibitem{css}HTML・CSSのそれぞれの基礎知識と違いとは？ ”, \url{https://www.sedesign.co.jp/blog/html-css}, 2022/12/6参照
-\bibitem{css2}Web制作に欠かせないCSSとは？役割や活用メリット、使い方などを解説します！ ”, \url{https://persol-tech-s.co.jp/hatalabo/it_engineer/502.html}, 2022/12/6参照
-\bibitem{js}JavaScriptとは？　modis ”, \url{https://www.modis.co.jp/candidate/insight/column_29}, 2022/12/6参照
-\bibitem{Exponential}　指数分布の意味と具体例 \url{https://manabitimes.jp/math/1006}
+	\bibitem{sotuken16}平成16年度　卒業論文　モンテカルロ法による待ち行列問題のマルチメディア教材 　
+	（薄井英彦・梅山卓也）
+	\bibitem{soumu} 総務省統計局　最適な設備投資を把握”, \url{https://www.stat.go.jp/naruhodo/15_episode/	toukeigaku/setubitoshi.html}, 2022/12/5参照
+	\bibitem{html} HTMLクイックリファレンス”, \url{http://www.htmq.com/}, 2022/12/5参照
+	\bibitem{css}HTML・CSSのそれぞれの基礎知識と違いとは？ ”, \url{https://www.sedesign.co.jp/blog/html-	css}, 2022/12/6参照
+	\bibitem{css2}Web制作に欠かせないCSSとは？役割や活用メリット、使い方などを解説します！ ”, 		\url{https://persol-tech-s.co.jp/hatalabo/it_engineer/502.html}, 2022/12/6参照
+	\bibitem{js}JavaScriptとは？　modis ”, \url{https://www.modis.co.jp/candidate/insight/column_29}, 2022/12/6	参照
+	\bibitem{Exponential}　指数分布の意味と具体例”,  \url{https://manabitimes.jp/math/1006},　2022/12/30参照
 \end{thebibliography}
 
 \end{document}
