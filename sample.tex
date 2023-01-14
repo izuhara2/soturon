@@ -5,6 +5,7 @@
 \usepackage{kougai}
 \usepackage{enumitem}
 \usepackage{amsmath}
+\usepackage{listings}
 
 \begin{document}
 
@@ -545,21 +546,182 @@ PAUSEボタンは押すことでアニメーションの途中で止めること
   \item[vbtimer.js]　アニメーションを連続的に動かしている．
   \vspace{10mm}
   
-  \item[waitinglistui.js]　図\ref{fig:layout_ex}②部分のボタンが押された時の処理を記述している．
+  \item[waitinglist\_ui.js]　図\ref{fig:layout_ex}②部分のボタンが押された時の処理を記述している．
 \end{description}
 
 \clearpage
 
 \begin{description}
 \item[クラス一覧]
+\item[class Customer]　客を扱うクラス．
+\item[class List]　待ち行列を扱うクラス.
+\item[class nylon]　受け取ったイベント情報をそのまま外部に渡すクラス.
+\item[class Register]　レジ（単独）を扱うクラス.
+\item[class shop]　全体制御のためのクラス.
+\item[class vbTimer]　内部的に時間を進める時の開始・停止の処理を扱うクラス.
 \end{description}
 \clearpage
 
 \begin{description}
 \item[メソッド一覧]
-\end{description}
+\item[moveメソッド]　客が窓口でサービスを受ける座標まで移動させている．
+\begin{lstlisting}
+	const regi_enter = { //客が窓口でサービスを受ける座標
+            x: [60, 170, 280, 390, 500, 610, 720, 830, 940, 1050],
+            y: [650, 650, 650, 650, 650, 650, 650, 650, 650]
+        }
+        this._img.style.left = `${regi_enter.x[id]}px`;;
+        this._img.style.top = `${regi_enter.y[id]}px`;;
+\end{lstlisting}   
+  \vspace{10mm}
+
+\item[processメソッド]　内部的に時間を進める.
+\begin{lstlisting}
+	this._remain -= time;
+        return this._remain;
+\end{lstlisting} 
+  \vspace{10mm}
+
+\item[gaussメソッド]　客の処理時間を設定する.
+\begin{lstlisting}
+	let del = 0.0;
+        for( let p=0; p<12; p++ ) {
+            del += Math.random();
+        }
+        return delta + sigma * (del - 6.0);
+\end{lstlisting}   
+\vspace{10mm}
+
+\item[getLengthメソッド]　レジ数を返す．
+\begin{lstlisting}
+	return this._list.length;
+\end{lstlisting}   
+\vspace{10mm}
+
+\item[shiftメソッド]　待ち行列の先頭を取り除く．
+\begin{lstlisting}
+	if (this._list.length == 0) throw new RangeError('待ち行列に客がいません');
+        return this._list.shift();\end{lstlisting}   
+\vspace{10mm}
+
+\item[move\_gyouretuメソッド]　行列を移動させる．先頭の客が窓口に入った時の列を詰める動きを記述している．
+\begin{lstlisting}
+	if (this._list.length == 0) throw new RangeError('待ち行列に客がいません');
+        return this._list.shift();
+\end{lstlisting}   
+\vspace{10mm}
 \clearpage
 
+\item[poisonメソッド]　次の客が来るまでの時間を設定する．
+\begin{lstlisting}
+	return -Math.log( Math.random() ) / this._alpha; 
+\end{lstlisting} 
+\vspace{10mm}
+
+\item[setPassThroughメソッド]　受け取ったイベント情報をそのまま外部に渡すための関数である． nylon.iFrameで使用する．
+\begin{lstlisting}
+	if( window.nylon.passthrough == null ) {
+			window.nylon.passthrough = fn;
+		} else {
+			console.log( "Error by duplexy registration" );
+		} 
+\end{lstlisting} 
+\vspace{10mm}
+
+\item[onメソッド]　キーワードと，キーワードに対する処理を登録する関数である． 
+\begin{lstlisting}
+	console.log( this );
+		if( this.map[ keyword ] == null ) {
+			//if( window != parent ) {
+			//	this.parent.postMessage( { "keyword": ["on"], "params": {"keyword": ["on"], "key":keyword}}, nylon.origin );
+			//}
+			console.log( "new keyword : " + keyword );
+			this.map[ keyword ] = [ new nylonfunc( fn, this ) ];
+		} else {
+			this.map[ keyword ].push( new nylonfunc( fn, this ) );
+		}
+\end{lstlisting} 
+\vspace{10mm}
+
+\item[emitByArrayメソッド]　イベントを起こす関数1である． 
+\begin{lstlisting}
+	if( window.nylon.passthrough != null ) {
+			window.nylon.passthrough( keys, params, this );
+		}
+		if( params == null ) {
+			params = {};
+		}
+		console.log( "-->" + params["keywords"] );
+
+		if( params["keywords"] == null ) {
+			console.log("params.keywordsがnull");
+			params["keywords"] = keys;
+		}
+
+		for( let key of keys ) {
+			if( this.map[ key ] == null ) {
+				console.log( "Invarid keyword " + key );
+			} else {
+				for( let element of this.map[ key ] ) {
+					//console.log( element );
+					//console.log( "-->" + element.obj );
+					if( element.obj != this ) {
+						element.fn( key, params );
+					}
+				}
+			}
+		}
+\end{lstlisting} 
+\vspace{10mm}
+
+\item[emitメソッド]　イベントを起こす関数2である． 
+\begin{lstlisting}
+	var keys = keyword.split( "|" );
+	this.emitByArray( keys, params );
+\end{lstlisting} 
+\vspace{10mm}
+
+\item[isProgresメソッド]　客に対応中か確認する．対応中: true, 空き状態: falseを返す． 
+\begin{lstlisting}
+	return this._progress != null;
+\end{lstlisting} 
+\vspace{10mm}
+
+\item[pushメソッド]　レジに客を誘導して処理を開始する． 
+\begin{lstlisting}
+	if (this.remain < 0) customer.process(-this.remain);
+        else customer.process(-rew);
+        this._progress = customer;
+        customer.img.style.left = this.x;
+        customer.img.style.top = this.y;
+\end{lstlisting} 
+\vspace{10mm}
+
+\item[enableメソッド]　内部的に時間を進める時の開始を定義している． 
+\begin{lstlisting}
+	this._tHandle = setInterval(this.timer, this.interval);
+         this.enabled = true;
+\end{lstlisting} 
+\vspace{10mm}
+\clearpage
+
+\item[disableメソッド]　内部的に時間を進める時の停止を定義している． 
+\begin{lstlisting}
+	if( this.enabled == true ) {
+              clearInterval ( this._tHandle );
+              this.enabled = false;
+          }
+\end{lstlisting} 
+\vspace{10mm}
+
+\item[nl2.onメソッド]　STARTボタンが押された時にenableメソッド，PAUSEが押された時disableメソッドを呼び出す．
+\begin{lstlisting}
+	 timer.enable();
+	 timer.disable();
+\end{lstlisting} 
+\vspace{10mm}
+\end{description}
+\clearpage
 
 \section{おわりに}
 本研究では，先行研究をもとに視覚的・直感的に理解できることを目的とした待ち行列問題シミュレータをブラウザへ改良を行い，移植することを目的とした．

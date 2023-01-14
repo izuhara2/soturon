@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.5.4)  14 JAN 2023 14:17
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.5.4)  14 JAN 2023 15:21
  restricted system commands enabled.
  file:line:error style messages enabled.
 **sample.tex
@@ -1062,14 +1062,53 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@count@id=\count324
 \enitdp@description=\count325
 )
-LaTeX Font Info:    Trying loading font information for T1+fnc on input line 9.
+(/usr/local/texlive/2022/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count326
+\lst@gtempboxa=\box75
+\lst@token=\toks40
+\lst@length=\count327
+\lst@currlwidth=\dimen196
+\lst@column=\count328
+\lst@pos=\count329
+\lst@lostspace=\dimen197
+\lst@width=\dimen198
+\lst@newlines=\count330
+\lst@lineno=\count331
+\lst@maxwidth=\dimen199
 
+(/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count332
+\lst@skipnumbers=\count333
+\lst@framebox=\box76
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(/usr/local/texlive/2022/texmf-dist/tex/luatex/luatexja/patches/lltjp-listings.
+sty
+(/usr/local/texlive/2022/texmf-dist/tex/luatex/luatexbase/luatexbase-cctb.sty
+Package: luatexbase-cctb 2015/10/04 v1.3 luatexbase interface to LuaTeX (legacy
+ subpackage) 
+)
+\CatcodeTableLTJlistings=\catcodetable15
+\ltj@lst@frame@lslimit=\dimen256
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\lst@WFtoken=\toks41
+\lst@WF=\write4
+))
+LaTeX Font Info:    Trying loading font information for T1+fnc on input line 10
+.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fouriernc/t1fnc.fd
 File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 9.
+(Font)              scaled to size 9.29993pt on input line 10.
  (./sample.aux
 
 LaTeX Warning: Label `fig:layout_ex' multiply defined.
@@ -1077,73 +1116,73 @@ LaTeX Warning: Label `fig:layout_ex' multiply defined.
 )
 \openout1 = sample.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    Trying loading font information for TS1+cmr on input line 9
-.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    Trying loading font information for TS1+cmr on input line 1
+0.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 10.
 LaTeX Font Info:    Trying loading font information for FML+fncmi on input line
- 9.
+ 10.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 10.
 LaTeX Font Info:    Trying loading font information for FMS+fncm on input line 
-9.
+10.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fouriernc/fmsfncm.fd
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 10.
 LaTeX Font Info:    Trying loading font information for FMX+futm on input line 
-9.
+10.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count326
-\scratchdimen=\dimen196
-\scratchbox=\box75
-\nofMPsegments=\count327
-\nofMParguments=\count328
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count329
-\MPscratchDim=\dimen197
-\MPnumerator=\count330
-\makeMPintoPDFobject=\count331
-\everyMPtoPDFconversion=\toks41
+\scratchcounter=\count334
+\scratchdimen=\dimen257
+\scratchbox=\box77
+\nofMPsegments=\count335
+\nofMParguments=\count336
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count337
+\MPscratchDim=\dimen258
+\MPnumerator=\count338
+\makeMPintoPDFobject=\count339
+\everyMPtoPDFconversion=\toks43
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1187,7 +1226,7 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 9.
+Package hyperref Info: Link coloring OFF on input line 10.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -1198,58 +1237,59 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count332
+\c@section@level=\count340
 )
-LaTeX Info: Redefining \ref on input line 9.
-LaTeX Info: Redefining \pageref on input line 9.
-LaTeX Info: Redefining \nameref on input line 9.
+LaTeX Info: Redefining \ref on input line 10.
+LaTeX Info: Redefining \pageref on input line 10.
+LaTeX Info: Redefining \nameref on input line 10.
  (./sample.out) (./sample.out)
-\@outlinefile=\write4
+\@outlinefile=\write5
 
-\openout4 = sample.out
+\openout5 = sample.out
+\c@lstlisting=\count341
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 16.07025pt on input line 16.
+(Font)              scaled to size 16.07025pt on input line 17.
 LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 15.97902pt on input line 16.
+(Font)              scaled to size 15.97902pt on input line 17.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 15.97902pt on input line 16.
+(Font)              scaled to size 15.97902pt on input line 17.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 23.13821pt on input line 20.
+(Font)              scaled to size 23.13821pt on input line 21.
 LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 23.00687pt on input line 20.
+(Font)              scaled to size 23.00687pt on input line 21.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 23.00687pt on input line 20.
+(Font)              scaled to size 23.00687pt on input line 21.
  [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 9.29993pt on input line 56.
+(Font)              scaled to size 9.29993pt on input line 57.
 LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/b/n' will be
 
-(Font)              scaled to size 9.24713pt on input line 56.
+(Font)              scaled to size 9.24713pt on input line 57.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/b/n' will be
 
-(Font)              scaled to size 9.24713pt on input line 56.
+(Font)              scaled to size 9.24713pt on input line 57.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 56.
+(Font)              scaled to size 11.15991pt on input line 57.
 LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 11.09656pt on input line 56.
+(Font)              scaled to size 11.09656pt on input line 57.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 11.09656pt on input line 56.
+(Font)              scaled to size 11.09656pt on input line 57.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 56.
+(Font)              scaled to size 11.15991pt on input line 57.
 LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/b/n' will be
 
-(Font)              scaled to size 11.09656pt on input line 56.
+(Font)              scaled to size 11.09656pt on input line 57.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/b/n' will be
 
-(Font)              scaled to size 11.09656pt on input line 56.
+(Font)              scaled to size 11.09656pt on input line 57.
  (./sample.toc
 LaTeX Font Info:    Calculating math sizes for size <11.99997> on input line 3.
 
@@ -1282,9 +1322,9 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.52002pt on input line 3.
 )
-\tf@toc=\write5
+\tf@toc=\write6
 
-\openout5 = sample.toc
+\openout6 = sample.toc
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1]
@@ -1295,23 +1335,23 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 <figures/itiyo.pdf, id=123, 963.6pt x 542.025pt>
 File: figures/itiyo.pdf Graphic file (type pdf)
 <use figures/itiyo.pdf>
-Package luatex.def Info: figures/itiyo.pdf  used on input line 102.
+Package luatex.def Info: figures/itiyo.pdf  used on input line 103.
 (luatex.def)             Requested size: 284.52756pt x 160.04485pt.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 103.
+(Font)              scaled to size 8.36993pt on input line 104.
 LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 8.32242pt on input line 103.
+(Font)              scaled to size 8.32242pt on input line 104.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 8.32242pt on input line 103.
+(Font)              scaled to size 8.32242pt on input line 104.
  [2
 
 <./figures/itiyo.pdf>]
 <figures/heihousaisunhou.pdf, id=143, 963.6pt x 542.025pt>
 File: figures/heihousaisunhou.pdf Graphic file (type pdf)
 <use figures/heihousaisunhou.pdf>
-Package luatex.def Info: figures/heihousaisunhou.pdf  used on input line 116.
+Package luatex.def Info: figures/heihousaisunhou.pdf  used on input line 117.
 (luatex.def)             Requested size: 284.52756pt x 160.04485pt.
  [3
 
@@ -1322,7 +1362,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 <figures/seikir.pdf, id=165, 963.6pt x 542.025pt>
 File: figures/seikir.pdf Graphic file (type pdf)
 <use figures/seikir.pdf>
-Package luatex.def Info: figures/seikir.pdf  used on input line 152.
+Package luatex.def Info: figures/seikir.pdf  used on input line 153.
 (luatex.def)             Requested size: 284.52756pt x 160.04485pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
@@ -1354,7 +1394,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 <figures/sisu.pdf, id=184, 963.6pt x 542.025pt>
 File: figures/sisu.pdf Graphic file (type pdf)
 <use figures/sisu.pdf>
-Package luatex.def Info: figures/sisu.pdf  used on input line 193.
+Package luatex.def Info: figures/sisu.pdf  used on input line 194.
 (luatex.def)             Requested size: 284.52756pt x 160.04485pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
@@ -1400,7 +1440,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 <figures/layout2.pdf, id=214, 963.6pt x 542.025pt>
 File: figures/layout2.pdf Graphic file (type pdf)
 <use figures/layout2.pdf>
-Package luatex.def Info: figures/layout2.pdf  used on input line 261.
+Package luatex.def Info: figures/layout2.pdf  used on input line 262.
 (luatex.def)             Requested size: 404.66513pt x 227.62204pt.
  [7
 
@@ -1410,12 +1450,12 @@ Package luatex.def Info: figures/layout2.pdf  used on input line 261.
 <figures/hyperlink.pdf, id=374, 963.6pt x 542.025pt>
 File: figures/hyperlink.pdf Graphic file (type pdf)
 <use figures/hyperlink.pdf>
-Package luatex.def Info: figures/hyperlink.pdf  used on input line 296.
+Package luatex.def Info: figures/hyperlink.pdf  used on input line 297.
 (luatex.def)             Requested size: 284.52756pt x 160.04485pt.
 <figures/html_ele.pdf, id=376, 963.6pt x 542.025pt>
 File: figures/html_ele.pdf Graphic file (type pdf)
 <use figures/html_ele.pdf>
-Package luatex.def Info: figures/html_ele.pdf  used on input line 307.
+Package luatex.def Info: figures/html_ele.pdf  used on input line 308.
 (luatex.def)             Requested size: 354.07097pt x 199.16928pt.
  [9
 
@@ -1425,7 +1465,7 @@ Package luatex.def Info: figures/html_ele.pdf  used on input line 307.
 <figures/css_ele.pdf, id=422, 963.6pt x 542.025pt>
 File: figures/css_ele.pdf Graphic file (type pdf)
 <use figures/css_ele.pdf>
-Package luatex.def Info: figures/css_ele.pdf  used on input line 338.
+Package luatex.def Info: figures/css_ele.pdf  used on input line 339.
 (luatex.def)             Requested size: 404.66513pt x 227.62204pt.
  [11
 
@@ -1437,7 +1477,7 @@ Package luatex.def Info: figures/css_ele.pdf  used on input line 338.
 <figures/simulator_layout.pdf, id=453, 963.6pt x 542.025pt>
 File: figures/simulator_layout.pdf Graphic file (type pdf)
 <use figures/simulator_layout.pdf>
-Package luatex.def Info: figures/simulator_layout.pdf  used on input line 377.
+Package luatex.def Info: figures/simulator_layout.pdf  used on input line 378.
 (luatex.def)             Requested size: 404.66513pt x 227.62204pt.
 
 [14
@@ -1450,7 +1490,7 @@ warning  (file figures/layout0113.pdf) (pdf inclusion): PDF inclusion: found PDF
 <figures/layout0113.pdf, id=487, 1444.97238pt x 823.1173pt>
 File: figures/layout0113.pdf Graphic file (type pdf)
 <use figures/layout0113.pdf>
-Package luatex.def Info: figures/layout0113.pdf  used on input line 428.
+Package luatex.def Info: figures/layout0113.pdf  used on input line 429.
 (luatex.def)             Requested size: 399.5845pt x 227.62204pt.
 [16
 
@@ -1461,7 +1501,7 @@ sion '1.7', but at most version '1.5' allowed
 <figures/lay_op.pdf, id=498, 1443.96858pt x 820.60779pt>
 File: figures/lay_op.pdf Graphic file (type pdf)
 <use figures/lay_op.pdf>
-Package luatex.def Info: figures/lay_op.pdf  used on input line 455.
+Package luatex.def Info: figures/lay_op.pdf  used on input line 456.
 (luatex.def)             Requested size: 400.51875pt x 227.62204pt.
 [17
 
@@ -1471,7 +1511,7 @@ ersion '1.7', but at most version '1.5' allowed
 <figures/lay_para.pdf, id=511, 1445.47429pt x 821.6116pt>
 File: figures/lay_para.pdf Graphic file (type pdf)
 <use figures/lay_para.pdf>
-Package luatex.def Info: figures/lay_para.pdf  used on input line 470.
+Package luatex.def Info: figures/lay_para.pdf  used on input line 471.
 (luatex.def)             Requested size: 400.45116pt x 227.62204pt.
 
 warning  (file figures/lay_anime.pdf) (pdf inclusion): PDF inclusion: found PDF 
@@ -1479,7 +1519,7 @@ version '1.7', but at most version '1.5' allowed
 <figures/lay_anime.pdf, id=512, 1445.47429pt x 821.1097pt>
 File: figures/lay_anime.pdf Graphic file (type pdf)
 <use figures/lay_anime.pdf>
-Package luatex.def Info: figures/lay_anime.pdf  used on input line 478.
+Package luatex.def Info: figures/lay_anime.pdf  used on input line 479.
 (luatex.def)             Requested size: 400.69377pt x 227.62204pt.
 [18
 
@@ -1489,29 +1529,174 @@ Package luatex.def Info: figures/lay_anime.pdf  used on input line 478.
 
 ] [21
 
-] [22
+]
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
+Removing  `ltj.listings_unicode' from `process_input_buffer'.
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family fnc in TS1 encoding.
+(textcomp)             Default family used instead on input line 580.
+LaTeX Font Info:    Trying loading font information for T1+lmr on input line 58
+0.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Removing  `ltj.listings_unicode' from `process_input_buffer'.
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
+LaTeX Font Info:    Trying loading font information for TS1+fnc on input line 5
+91.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
+File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
+)
+LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
+(Font)              scaled to size 9.29993pt on input line 591.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family fnc in TS1 encoding.
+(textcomp)             Default family used instead on input line 591.
+Removing  `ltj.listings_unicode' from `process_input_buffer'.
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
+Removing  `ltj.listings_unicode' from `process_input_buffer'.
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
+Overfull \hbox (76.90662pt too wide) in paragraph at lines 603--604
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+Removing  `ltj.listings_unicode' from `process_input_buffer'.
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
+Overfull \hbox (76.90662pt too wide) in paragraph at lines 609--610
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+Removing  `ltj.listings_unicode' from `process_input_buffer'. [22
 
 ]
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family fnc in TS1 encoding.
+(textcomp)             Default family used instead on input line 617.
+Removing  `ltj.listings_unicode' from `process_input_buffer'.
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
+Removing  `ltj.listings_unicode' from `process_input_buffer'.
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
+Overfull \hbox (458.5777pt too wide) in paragraph at lines 636--637
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][] 
+ []
+
+
+Overfull \hbox (30.03473pt too wide) in paragraph at lines 639--640
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (43.4267pt too wide) in paragraph at lines 641--642
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+Removing  `ltj.listings_unicode' from `process_input_buffer'.
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family fnc in TS1 encoding.
+(textcomp)             Default family used instead on input line 654.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family fnc in TS1 encoding.
+(textcomp)             Default family used instead on input line 654.
 [23
 
-] [24
+]
+Overfull \hbox (3.2508pt too wide) in paragraph at lines 663--664
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family fnc in TS1 encoding.
+(textcomp)             Default family used instead on input line 667.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family fnc in TS1 encoding.
+(textcomp)             Default family used instead on input line 667.
+
+Overfull \hbox (36.73071pt too wide) in paragraph at lines 667--668
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (16.64276pt too wide) in paragraph at lines 669--670
+[][][][][][][][][][][][][][][] 
+ []
+
+Removing  `ltj.listings_unicode' from `process_input_buffer'.
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
+Removing  `ltj.listings_unicode' from `process_input_buffer'.
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
+Removing  `ltj.listings_unicode' from `process_input_buffer'.
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family fnc in TS1 encoding.
+(textcomp)             Default family used instead on input line 692.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family fnc in TS1 encoding.
+(textcomp)             Default family used instead on input line 693.
+Removing  `ltj.listings_unicode' from `process_input_buffer'.
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
+Removing  `ltj.listings_unicode' from `process_input_buffer'. [24]
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
+Removing  `ltj.listings_unicode' from `process_input_buffer'.
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
+Removing  `ltj.listings_unicode' from `process_input_buffer'. [25
+
+] [26
+
+] [27
 
 ]
-LaTeX Font Info:    Trying loading font information for T1+lmtt on input line 5
-83.
+LaTeX Font Info:    Trying loading font information for T1+lmtt on input line 7
+45.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 9.24713pt on input line 583.
+(Font)              scaled to size 9.24713pt on input line 745.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 9.24713pt on input line 583.
- [25
+(Font)              scaled to size 9.24713pt on input line 745.
+ [28
 
-]
-(./sample.aux)
+] (./sample.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1520,31 +1705,33 @@ Package rerunfilecheck Info: File `sample.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 18601 strings out of 477785
- 195698,794899 words of node,token memory allocated
- 34861 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 2 glue, 401 kern, 1 glyph, 11802 attribute, 1417 g
-lue_spec, 623 attribute_list, 1 write, 165 user_defined, 3 pdf_action nodes
-   avail lists: 1:45,2:56593,3:304,4:235,5:34,6:56,7:3801,8:74,9:1864,10:40,11:1
-4
- 38170 multiletter control sequences out of 65536+600000
- 111 fonts using 119037407 bytes
+ 20476 strings out of 477785
+ 477797,794899 words of node,token memory allocated
+ 36716 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 2 glue, 401 kern, 1 glyph, 11887 attribute, 1748 g
+lue_spec, 628 attribute_list, 1 write, 170 user_defined, 3 pdf_action nodes
+   avail lists: 1:48,2:159988,3:396,4:5547,5:332,6:65,7:5162,8:74,9:6141,10:40,1
+1:14
+ 39882 multiletter control sequences out of 65536+600000
+ 114 fonts using 119244911 bytes
  115i,11n,118p,1765b,1031s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/tex
-live/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-
-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Bold.otf></usr/local/texliv
-e/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></
-usr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></u
-sr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></u
-sr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr
-/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texl
-ive/2022/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2022
-/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2022/texmf-d
-ist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on sample.pdf (27 pages, 1336014 bytes).
+live/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2022/texm
+f-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/ope
+ntype/public/haranoaji/HaranoAjiMincho-Bold.otf></usr/local/texlive/2022/texmf-d
+ist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texl
+ive/2022/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texli
+ve/2022/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texli
+ve/2022/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive
+/2022/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2022/texmf-
+dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2022/texmf-dist/fonts/
+type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/ur
+w/ncntrsbk/uncr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/ncntrs
+bk/uncri8a.pfb>
+Output written on sample.pdf (30 pages, 1369593 bytes).
 
-PDF statistics: 629 PDF objects out of 1000 (max. 8388607)
- 502 compressed objects within 6 object streams
- 105 named destinations out of 1000 (max. 131072)
+PDF statistics: 742 PDF objects out of 1000 (max. 8388607)
+ 610 compressed objects within 7 object streams
+ 200 named destinations out of 1000 (max. 131072)
  153 words of extra memory for PDF output out of 10000 (max. 100000000)
 
