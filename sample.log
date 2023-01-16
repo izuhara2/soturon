@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.5.4)  14 JAN 2023 15:22
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.5.4)  16 JAN 2023 18:22
  restricted system commands enabled.
  file:line:error style messages enabled.
 **sample.tex
@@ -1529,172 +1529,30 @@ Package luatex.def Info: figures/lay_anime.pdf  used on input line 479.
 
 ] [21
 
-]
-Removing  `ltj.process_input_buffer' from `process_input_buffer'.
-Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
-Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
-Removing  `ltj.listings_unicode' from `process_input_buffer'.
-Removing  `ltj.process_input_buffer' from `process_input_buffer'.
-Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
-Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family fnc in TS1 encoding.
-(textcomp)             Default family used instead on input line 580.
-LaTeX Font Info:    Trying loading font information for T1+lmr on input line 58
-0.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/lm/t1lmr.fd
-File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Removing  `ltj.listings_unicode' from `process_input_buffer'.
-Removing  `ltj.process_input_buffer' from `process_input_buffer'.
-Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
-Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
-LaTeX Font Info:    Trying loading font information for TS1+fnc on input line 5
-91.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
-File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
-)
-LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 591.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family fnc in TS1 encoding.
-(textcomp)             Default family used instead on input line 591.
-Removing  `ltj.listings_unicode' from `process_input_buffer'.
-Removing  `ltj.process_input_buffer' from `process_input_buffer'.
-Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
-Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
-Removing  `ltj.listings_unicode' from `process_input_buffer'.
-Removing  `ltj.process_input_buffer' from `process_input_buffer'.
-Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
-Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
-Overfull \hbox (76.90662pt too wide) in paragraph at lines 603--604
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-Removing  `ltj.listings_unicode' from `process_input_buffer'.
-Removing  `ltj.process_input_buffer' from `process_input_buffer'.
-Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
-Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
-Overfull \hbox (76.90662pt too wide) in paragraph at lines 609--610
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-Removing  `ltj.listings_unicode' from `process_input_buffer'. [22
+] [22
 
 ]
-Removing  `ltj.process_input_buffer' from `process_input_buffer'.
-Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
-Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family fnc in TS1 encoding.
-(textcomp)             Default family used instead on input line 617.
-Removing  `ltj.listings_unicode' from `process_input_buffer'.
-Removing  `ltj.process_input_buffer' from `process_input_buffer'.
-Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
-Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
-Removing  `ltj.listings_unicode' from `process_input_buffer'.
-Removing  `ltj.process_input_buffer' from `process_input_buffer'.
-Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
-Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
-Overfull \hbox (458.5777pt too wide) in paragraph at lines 636--637
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][] 
- []
-
-
-Overfull \hbox (30.03473pt too wide) in paragraph at lines 639--640
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (43.4267pt too wide) in paragraph at lines 641--642
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-Removing  `ltj.listings_unicode' from `process_input_buffer'.
-Removing  `ltj.process_input_buffer' from `process_input_buffer'.
-Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
-Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family fnc in TS1 encoding.
-(textcomp)             Default family used instead on input line 654.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family fnc in TS1 encoding.
-(textcomp)             Default family used instead on input line 654.
 [23
 
-]
-Overfull \hbox (3.2508pt too wide) in paragraph at lines 663--664
-[][][][][][][][][][][][][][][][][][][][][] 
- []
+] [24
 
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family fnc in TS1 encoding.
-(textcomp)             Default family used instead on input line 667.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family fnc in TS1 encoding.
-(textcomp)             Default family used instead on input line 667.
-
-Overfull \hbox (36.73071pt too wide) in paragraph at lines 667--668
-[][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (16.64276pt too wide) in paragraph at lines 669--670
-[][][][][][][][][][][][][][][] 
- []
-
-Removing  `ltj.listings_unicode' from `process_input_buffer'.
-Removing  `ltj.process_input_buffer' from `process_input_buffer'.
-Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
-Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
-Removing  `ltj.listings_unicode' from `process_input_buffer'.
-Removing  `ltj.process_input_buffer' from `process_input_buffer'.
-Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
-Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
-Removing  `ltj.listings_unicode' from `process_input_buffer'.
-Removing  `ltj.process_input_buffer' from `process_input_buffer'.
-Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
-Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family fnc in TS1 encoding.
-(textcomp)             Default family used instead on input line 692.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family fnc in TS1 encoding.
-(textcomp)             Default family used instead on input line 693.
-Removing  `ltj.listings_unicode' from `process_input_buffer'.
-Removing  `ltj.process_input_buffer' from `process_input_buffer'.
-Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
-Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
-Removing  `ltj.listings_unicode' from `process_input_buffer'. [24]
-Removing  `ltj.process_input_buffer' from `process_input_buffer'.
-Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
-Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
-Removing  `ltj.listings_unicode' from `process_input_buffer'.
-Removing  `ltj.process_input_buffer' from `process_input_buffer'.
-Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
-Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
-Removing  `ltj.listings_unicode' from `process_input_buffer'. [25
+] [25
 
 ] [26
 
-] [27
-
 ]
 LaTeX Font Info:    Trying loading font information for T1+lmtt on input line 7
-45.
+78.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 9.24713pt on input line 745.
+(Font)              scaled to size 9.24713pt on input line 778.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 9.24713pt on input line 745.
- [28
+(Font)              scaled to size 9.24713pt on input line 778.
+[27
 
 ] (./sample.aux)
 
@@ -1705,33 +1563,31 @@ Package rerunfilecheck Info: File `sample.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 20476 strings out of 477785
- 477797,794899 words of node,token memory allocated
- 36716 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 2 glue, 401 kern, 1 glyph, 11887 attribute, 1748 g
-lue_spec, 628 attribute_list, 1 write, 170 user_defined, 3 pdf_action nodes
-   avail lists: 1:48,2:159988,3:396,4:5547,5:332,6:65,7:5162,8:74,9:6141,10:40,1
-1:14
- 39882 multiletter control sequences out of 65536+600000
- 114 fonts using 119244911 bytes
+ 20299 strings out of 477785
+ 244627,794899 words of node,token memory allocated
+ 35941 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 2 glue, 401 kern, 1 glyph, 11632 attribute, 1713 g
+lue_spec, 613 attribute_list, 1 write, 155 user_defined, 3 pdf_action nodes
+   avail lists: 1:45,2:56773,3:328,4:224,5:34,6:57,7:3801,8:74,9:1864,10:40,11:2
+8
+ 39828 multiletter control sequences out of 65536+600000
+ 111 fonts using 119037407 bytes
  115i,11n,118p,1765b,1031s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/tex
-live/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2022/texm
-f-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/ope
-ntype/public/haranoaji/HaranoAjiMincho-Bold.otf></usr/local/texlive/2022/texmf-d
-ist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texl
-ive/2022/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texli
-ve/2022/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texli
-ve/2022/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive
-/2022/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2022/texmf-
-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2022/texmf-dist/fonts/
-type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/ur
-w/ncntrsbk/uncr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/ncntrs
-bk/uncri8a.pfb>
-Output written on sample.pdf (30 pages, 1369593 bytes).
+live/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-
+dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Bold.otf></usr/local/texliv
+e/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></
+usr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></u
+sr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></u
+sr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr
+/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texl
+ive/2022/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2022
+/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2022/texmf-d
+ist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on sample.pdf (29 pages, 1342964 bytes).
 
-PDF statistics: 742 PDF objects out of 1000 (max. 8388607)
- 610 compressed objects within 7 object streams
- 200 named destinations out of 1000 (max. 131072)
+PDF statistics: 619 PDF objects out of 1000 (max. 8388607)
+ 491 compressed objects within 5 object streams
+ 93 named destinations out of 1000 (max. 131072)
  153 words of extra memory for PDF output out of 10000 (max. 100000000)
 

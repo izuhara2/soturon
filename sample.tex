@@ -489,238 +489,271 @@ PAUSEボタンは押すことでアニメーションの途中で止めること
 \begin{description}
   \item[ファイル一覧]
   
-  \item[sample.html]　シミュレータの表示部分，各パラメータのスライダーやアニメーションの行う位置を記述している．
-  \vspace{10mm}
-  
-  \item[sample.css]　HTML内要素の配置，アニメーションの速度，移動の仕方などの設定を行う．
-  \vspace{10mm}
-  
-  \item[Customer.js]　客を取り扱うクラスである．
-  客が来たタイミングで客の画像を作成している．
-  コンスラクタとして
-  \begin{enumerate}[label=(\arabic*)]
-	\item　$\delta$- 客の処理時間の平均値
-	\item　$\sigma$- 処理時間の標準偏差
-	\item　$number$  - 待ち行列内の順序
-	\item　$y$- 待ち行列の$y$座標
-\end{enumerate}
-を定義した．
-\vspace{10mm}
-
-  \item[Figure.js] 　窓口を表す図形を作成する．
-  \vspace{10mm}
-  
-  \item[List.js]　待ち行列を取り扱う．客が窓口に入った後の行列を詰める動きを記述している． コンスラクタとして
-  \begin{enumerate}[label=(\roman*)]
-	\item　$\delta$- 客の処理時間の平均値
-	\item　$\sigma$- 処理時間の標準偏差
-	\item　$\alpha$ - 客の流れ密度
-\end{enumerate}
-を定義した．
-\vspace{10mm}
-
-  \item[nylon.js]　アニメーションの開始・停止を記述している．
-  \vspace{10mm}
-  
-  \item[Register.js]　各窓口を扱う．どの窓口を表しているか示す$id$，窓口前の座標をコンストラクタとして受け取り客を対応する窓口前へ移動させる．
- コンスラクタとして
-  \begin{enumerate}[label=(\Roman*)]
-	\item　$id$- どの窓口かを区別する$id$
-	\item　$x$- 窓口前の$x$座標
-	\item　$y$ - 窓口前の$y$座標
-\end{enumerate}
-を定義した．
-\vspace{10mm}
-\clearpage
-
-  \item[Shop.js]　全体（客，窓口）を制御する．ユーザーが設定したパラメータを受け取り，窓口に入るタイミングを指定している．
-  コンスラクタとして
-  \begin{enumerate}[label=(\alph*)]
-	\item　$number$- どの窓口かを区別する$id$
-	\item　$\delta$- 客の処理時間の平均値
-	\item　$\sigma$- 処理時間の標準偏差
-	\item　$\alpha$ - 客の流れ密度
-\end{enumerate}
-\vspace{10mm}
-
-  \item[vbtimer.js]　アニメーションを連続的に動かしている．
-  \vspace{10mm}
-  
-  \item[waitinglist\_ui.js]　図\ref{fig:layout_ex}②部分のボタンが押された時の処理を記述している．
+  \item[sample.html]　  
+  \item[sample.css]　
+  \item[Customer.js]
+  \item[Figure.js] 　
+  \item[List.js]
+  \item[nylon.js]　
+  \item[Register.js]　
+  \item[Shop.js]　
+  \item[vbtimer.js]　
+  \item[waitinglist\_ui.js]　
 \end{description}
 
 \clearpage
 
 \begin{description}
 \item[クラス一覧]
-\item[class Customer]　客を扱うクラス．
-\item[class List]　待ち行列を扱うクラス.
-\item[class nylon]　受け取ったイベント情報をそのまま外部に渡すクラス.
-\item[class Register]　レジ（単独）を扱うクラス.
-\item[class shop]　全体制御のためのクラス.
-\item[class vbTimer]　内部的に時間を進める時の開始・停止の処理を扱うクラス.
-\end{description}
-\clearpage
+\item[Customer]　客を取り扱うクラスである．
+客が来たタイミングで客の画像を作成している．
 
+インスタンス変数として以下を定義している．
 \begin{description}
-\item[メソッド一覧]
-\item[moveメソッド]　客が窓口でサービスを受ける座標まで移動させている．
-\begin{lstlisting}
-	const regi_enter = { //客が窓口でサービスを受ける座標
-            x: [60, 170, 280, 390, 500, 610, 720, 830, 940, 1050],
-            y: [650, 650, 650, 650, 650, 650, 650, 650, 650]
-        }
-        this._img.style.left = `${regi_enter.x[id]}px`;;
-        this._img.style.top = `${regi_enter.y[id]}px`;;
-\end{lstlisting}   
-  \vspace{10mm}
-
-\item[processメソッド]　内部的に時間を進める.
-\begin{lstlisting}
-	this._remain -= time;
-        return this._remain;
-\end{lstlisting} 
-  \vspace{10mm}
-
-\item[gaussメソッド]　客の処理時間を設定する.
-\begin{lstlisting}
-	let del = 0.0;
-        for( let p=0; p<12; p++ ) {
-            del += Math.random();
-        }
-        return delta + sigma * (del - 6.0);
-\end{lstlisting}   
-\vspace{10mm}
-
-\item[getLengthメソッド]　レジ数を返す．
-\begin{lstlisting}
-	return this._list.length;
-\end{lstlisting}   
-\vspace{10mm}
-
-\item[shiftメソッド]　待ち行列の先頭を取り除く．
-\begin{lstlisting}
-	if (this._list.length == 0) throw new RangeError('待ち行列に客がいません');
-        return this._list.shift();\end{lstlisting}   
-\vspace{10mm}
-
-\item[move\_gyouretuメソッド]　行列を移動させる．先頭の客が窓口に入った時の列を詰める動きを記述している．
-\begin{lstlisting}
-	if (this._list.length == 0) throw new RangeError('待ち行列に客がいません');
-        return this._list.shift();
-\end{lstlisting}   
-\vspace{10mm}
-\clearpage
-
-\item[poisonメソッド]　次の客が来るまでの時間を設定する．
-\begin{lstlisting}
-	return -Math.log( Math.random() ) / this._alpha; 
-\end{lstlisting} 
-\vspace{10mm}
-
-\item[setPassThroughメソッド]　受け取ったイベント情報をそのまま外部に渡すための関数である． nylon.iFrameで使用する．
-\begin{lstlisting}
-	if( window.nylon.passthrough == null ) {
-			window.nylon.passthrough = fn;
-		} else {
-			console.log( "Error by duplexy registration" );
-		} 
-\end{lstlisting} 
-\vspace{10mm}
-
-\item[onメソッド]　キーワードと，キーワードに対する処理を登録する関数である． 
-\begin{lstlisting}
-	console.log( this );
-		if( this.map[ keyword ] == null ) {
-			//if( window != parent ) {
-			//	this.parent.postMessage( { "keyword": ["on"], "params": {"keyword": ["on"], "key":keyword}}, nylon.origin );
-			//}
-			console.log( "new keyword : " + keyword );
-			this.map[ keyword ] = [ new nylonfunc( fn, this ) ];
-		} else {
-			this.map[ keyword ].push( new nylonfunc( fn, this ) );
-		}
-\end{lstlisting} 
-\vspace{10mm}
-
-\item[emitByArrayメソッド]　イベントを起こす関数1である． 
-\begin{lstlisting}
-	if( window.nylon.passthrough != null ) {
-			window.nylon.passthrough( keys, params, this );
-		}
-		if( params == null ) {
-			params = {};
-		}
-		console.log( "-->" + params["keywords"] );
-
-		if( params["keywords"] == null ) {
-			console.log("params.keywordsがnull");
-			params["keywords"] = keys;
-		}
-
-		for( let key of keys ) {
-			if( this.map[ key ] == null ) {
-				console.log( "Invarid keyword " + key );
-			} else {
-				for( let element of this.map[ key ] ) {
-					//console.log( element );
-					//console.log( "-->" + element.obj );
-					if( element.obj != this ) {
-						element.fn( key, params );
-					}
-				}
-			}
-		}
-\end{lstlisting} 
-\vspace{10mm}
-
-\item[emitメソッド]　イベントを起こす関数2である． 
-\begin{lstlisting}
-	var keys = keyword.split( "|" );
-	this.emitByArray( keys, params );
-\end{lstlisting} 
-\vspace{10mm}
-
-\item[isProgresメソッド]　客に対応中か確認する．対応中: true, 空き状態: falseを返す． 
-\begin{lstlisting}
-	return this._progress != null;
-\end{lstlisting} 
-\vspace{10mm}
-
-\item[pushメソッド]　レジに客を誘導して処理を開始する． 
-\begin{lstlisting}
-	if (this.remain < 0) customer.process(-this.remain);
-        else customer.process(-rew);
-        this._progress = customer;
-        customer.img.style.left = this.x;
-        customer.img.style.top = this.y;
-\end{lstlisting} 
-\vspace{10mm}
-
-\item[enableメソッド]　内部的に時間を進める時の開始を定義している． 
-\begin{lstlisting}
-	this._tHandle = setInterval(this.timer, this.interval);
-         this.enabled = true;
-\end{lstlisting} 
-\vspace{10mm}
-\clearpage
-
-\item[disableメソッド]　内部的に時間を進める時の停止を定義している． 
-\begin{lstlisting}
-	if( this.enabled == true ) {
-              clearInterval ( this._tHandle );
-              this.enabled = false;
-          }
-\end{lstlisting} 
-\vspace{10mm}
-
-\item[nl2.onメソッド]　STARTボタンが押された時にenableメソッド，PAUSEが押された時disableメソッドを呼び出す．
-\begin{lstlisting}
-	 timer.enable();
-	 timer.disable();
-\end{lstlisting} 
-\vspace{10mm}
+	\item[delta]　$\delta$- 客の処理時間の平均値
+	\item[sigma]　$\sigma$- 処理時間の標準偏差
+	\item[number]　待ち行列内の順序
+	\item[y]　待ち行列の$y$座標
 \end{description}
+\vspace{5mm}
+
+メソッドとして以下を定義している．
+\begin{description}
+	\item[move]　客をレジの前に移動させる
+	\item[process]　内部的に時間をすすめる
+	\item[gauss]　客の処理時間を設定する
+\end{description}
+\vspace{5mm}
+
+moveメソッドの詳細を以下に示す．
+\begin{description}
+	\item[パラメータ id]　整数 / レジ番号
+	\item[返り値]　無し
+\end{description}
+\vspace{5mm}
+
+processメソッドの詳細を以下に示す．
+\begin{description}
+	\item[パラメータ time]　経過させる単位時間
+	\item[返り値]　処理時間の残り
+\end{description}
+\vspace{5mm}
+
+gaussメソッドの詳細を以下に示す．
+\begin{description}
+	\item[パラメータ delta]　処理時間の平均値
+	\item[パラメータ sigma]　処理時間の標準偏差
+	\item[返り値]　処理時間
+\end{description}
+\vspace{10mm}
+\clearpage
+
+
+\item[List]　待ち行列を取り扱う．
+客が窓口に入った後の行列を詰める動きを記述している． 
+
+インスタンス変数として以下を定義している．
+\begin{description}
+	\item[delta]　$\delta$- 客の処理時間の平均値
+	\item[sigma]　$\sigma$- 処理時間の標準偏差
+	\item[alpha]　$number$  - 待ち行列内の順序
+\end{description}
+\vspace{5mm}
+
+メソッドとして以下を定義している．
+\begin{description}
+	\item[getLength]　レジ数を返す
+	\item[shift]　待ち行列の先頭を取り除く
+	\item[move\_gyouretu]　行列を移動させる（列を詰める動き）
+	\item[process]　内部的に時間を進める
+	\item[poison]　次の客が来るまでの時間を設定
+\end{description}
+\vspace{5mm}
+
+getLengthメソッドの詳細を以下に示す．
+\begin{description}
+	\item[パラメータ]　無し
+	\item[返り値]　レジ数
+\end{description}
+\vspace{5mm}
+
+shihtメソッドの詳細を以下に示す．
+\begin{description}
+	\item[パラメータ]　無し
+	\item[返り値]　先頭の客
+\end{description}
+\vspace{5mm}
+
+move\_gyoureruメソッドの詳細を以下に示す．
+\begin{description}
+	\item[パラメータ]　無し
+	\item[返り値]　無し
+\end{description}
+\vspace{5mm}
+
+processメソッドの詳細を以下に示す．
+\begin{description}
+	\item[パラメータ time]　経過させる単位時間
+	\item[返り値]　処理時間の残り
+\end{description}
+\vspace{5mm}
+
+poisonメソッドの詳細を以下に示す．
+\begin{description}
+	\item[パラメータ]　無し	
+	\item[返り値]　次の客が来るまでの時間
+\end{description}
+\vspace{10mm}
+\clearpage
+
+
+\item[nylon]　受け取ったイベント情報をそのまま外部に渡すクラス.アニメーションの開始・停止を記述している．
+
+メソッドとして以下を定義している．
+\begin{description}
+	\item[setPassThrough]　受け取ったイベント情報をそのまま外部に渡すための関数
+	\item[on]　イベントが起きたタイミングで、指定した要素に何らかの処理を起こす，
+ここではキーワードと，キーワードに対する処理を登録する関数として使用している
+	\item[emitByArray]　イベントを起こす関数1
+	\item[emit]　イベントを起こす関数2
+\end{description}
+\vspace{5mm}
+
+setPassThroughメソッドの詳細を以下に示す．
+\begin{description}
+	\item[パラメータ fn]　イベントを処理するコールバック関数
+	\item[返り値]　無し
+\end{description}
+\vspace{5mm}
+
+onメソッドの詳細を以下に示す．
+\begin{description}
+	\item[パラメータ keyword]　キーワード
+	\item[パラメータ fn]　コールバック関数
+	\item[返り値]　無し
+\end{description}
+\vspace{5mm}
+
+emitByArrayメソッドの詳細を以下に示す．
+\begin{description}
+	\item[パラメータ keys]　キーワード
+	\item[パラメータ params]　パラメータ
+	\item[返り値]　無し
+\end{description}
+\vspace{5mm}
+
+emitメソッドの詳細を以下に示す．
+\begin{description}
+	\item[パラメータ keyword]　キーワード
+	\item[パラメータ params]　パラメータ
+	\item[返り値]　無し
+\end{description}
+\vspace{10mm}
+
+
+\item[nylonfunc]　nylonに登録する関数のクラス．
+
+インスタンス変数として以下を定義している．
+\begin{description}
+	\item[func]　コールバック関数
+	\item[object]　nylonオブジェクト
+\end{description}
+\vspace{10mm}
+\clearpage
+
+
+\item[Register]　レジ（単独）を扱うクラス.
+どの窓口を表しているか示す$id$，窓口前の座標をコンストラクタとして受け取り客を対応する窓口前へ移動させる．
+
+インスタンス変数として以下を定義している．
+\begin{description}
+	\item[number]　レジid
+	\item[x]　レジの客のx座標
+	\item[y]　レジの客のy座標
+\end{description}
+\vspace{5mm}
+
+メソッドとして以下を定義している．
+\begin{description}
+	\item[process]　内部的に時間を進める
+	\item[isProgress]　客に対応中か？
+	\item[push]　レジに客を誘導して処理を開始する
+\end{description}
+\vspace{5mm}
+
+processメソッドの詳細を以下に示す．
+\begin{description}
+	\item[パラメータ time]　経過させる単位時間
+	\item[返り値]　無し
+\end{description}
+\vspace{5mm}
+
+isProgressメソッドの詳細を以下に示す．
+\begin{description}
+	\item[パラメータ]　無し
+	\item[返り値]　対応中: true, 空き状態: false
+\end{description}
+\vspace{5mm}
+
+pushメソッドの詳細を以下に示す．
+\begin{description}
+	\item[パラメータ rew]　調整する時間
+	\item[パラメータ customer]　客
+	\item[返り値]　無し
+\end{description}
+\vspace{10mm}
+\clearpage
+
+
+\item[Shop]　全体（客，窓口）を制御する．ユーザーが設定したパラメータを受け取り，窓口に入るタイミングを指定している．
+
+インスタンス変数として以下を定義している．
+\begin{description}
+	\item[number]　レジの数
+	\item[delta]　$\delta$- 客の処理時間の平均値
+	\item[sigma]　$\sigma$- 処理時間の標準偏差
+	\item[alpha] 　$\alpha$- 客の流れ密度
+\end{description}
+\vspace{5mm}
+
+メソッドとして以下を定義している．
+\begin{description}
+	\item[process]　内部的に時間を進める
+\end{description}
+\vspace{5mm}
+
+processメソッドの詳細を以下に示す．
+\begin{description}
+	\item[パラメータ time]　経過させる単位時間
+	\item[返り値]　無し
+\end{description}
+\vspace{10mm}
+
+
+\item[vbTimer]　内部的に時間を進める時の開始・停止の処理を扱うクラス.
+
+メソッドとして以下を定義している．
+\begin{description}
+	\item[enable]　内部的に時間を進める時の開始の処理
+	\item[disable]　内部的に時間を進める時の停止の処理
+\end{description}
+\vspace{5mm}
+
+enableメソッドの詳細を以下に示す．
+\begin{description}
+	\item[パラメータ]　無し
+	\item[返り値]　無し
+\end{description}
+\vspace{5mm}
+
+disableメソッドの詳細を以下に示す．
+\begin{description}
+	\item[パラメータ]　無し
+	\item[返り値]　無し
+\end{description}
+
+\end{description}
+
 \clearpage
 
 \section{おわりに}
